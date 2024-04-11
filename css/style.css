@@ -338,24 +338,14 @@ section {
 } */
 
 /* ABOUT PAGE */
-/* .about-hero-img {
-    background-image: url("/img/hero-test.png");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    color: black;
-    text-align: center;
+
+
+.about-hero {
+    padding: 10em 0 10em 10em;
     display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.about-hero-info {}
-
-.about-hero-info p {
-    font-size: 2rem;
-    text-align: left;
 }
+
+.about-info {}
 
 
 
