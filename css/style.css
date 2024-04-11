@@ -1,19 +1,17 @@
 :root {
-    --font-body: Helvetica, Arial, sans-serif;
-    --font-headings: "futura-pt", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    --font-body: "montserrat", sans-serif;
+    --font-headings: "roboto-condensed", sans-serif;
 }
 
 /* SET GLOBAL TYPOGRAPHY */
 body {
     font-family: var(--font-body);
-    line-height: 1.5;
+    /* line-height: 1.5; */
     margin: 0;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: #d2d0db;
+    background-color: #F4FAFC;
 }
 
 h1,
@@ -23,13 +21,15 @@ h3 {
 }
 
 h1 {
-    font-size: 2.25em;
+    /* font-size: 2.25em; */
+    font-size: 4.5em;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 1.875em;
-    line-height: 1.2;
+    /* font-size: 1.875em; */
+    font-size: 3.5em;
+    line-height: 1;
 }
 
 h3 {
@@ -39,12 +39,46 @@ h3 {
 
 p {
     max-width: 60ch;
+    line-height: 1.5;
+    /* font-size: 1.5em; */
 }
 
 
 
+/* BUTTONS */
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #148C77;
+    color: white;
+    border-radius: .5em;
+    text-decoration: none;
+    border: 1px solid #148C77;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* GLOBAL MEDIA */
+
+/* RESPONSIVE IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* GLOBAL HELPERS */
+.centered-text {
+    text-align: center;
+}
+
+/* GLOBAL STRUCTURE */
+
 header {
-    background-color: #aca9c4;
+    /* background-color: #148C77; */
     display: flex;
     justify-content: space-between;
     /* border-bottom: .5px solid #888; */
@@ -54,23 +88,50 @@ header a {
     display: block;
     padding: 1em;
     text-decoration: none;
-    color: rgb(24, 24, 24);
+    color: #148C77;
 }
 
 header a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(19, 51, 36);
 }
 
 main {
     /*   background-color: pink; */
-    padding: 1em;
+    padding-bottom: 100px;
 }
+
+
 
 .site-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+}
+
+
+footer {
+    /* background-color: #BBE6D7; */
+    /* border-top: .5px solid #888; */
+}
+
+footer a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #148C77;
+}
+
+
+.social-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+section {
+    padding: 1em;
 }
 
 /* HERO */
@@ -81,103 +142,35 @@ main {
 }
 
 .portfolio-hero h1 {
-    font-size: 3em;
+    font-size: 4em;
+    line-height: 1;
+    margin: 1em 0;
+    padding: 0;
 }
 
-/* PORTFOLIO GRID */
-.portfolio-section {
-    --space: 4rem;
-    padding: var(--space);
+.portfolio-hero h2 {
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 1em 0 1.5em 0;
+    padding: 0;
 }
 
+/* GLOBAL CONTAINER */
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    height: 100%;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
-    grid-gap: var(--space);
-    /* background-color: yellow; */
-}
-
-.pg-perspective {
-    perspective: 750px;
-    position: relative;
-    text-align: center;
-}
-
-.portfolio-grid img {
-    /* max-width: 100%; */
-    width: 23em;
-    height: 23em;
-    display: block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px;
-}
-
-.pg-card-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.pg-perspective a {
-    text-decoration: none;
-    color: white;
-}
-
-/* .card {
-    background: #fff;
-} */
-
-/* .card__info {
-    padding: 1.5rem;
-}
-
-.card__info>* {
-    margin: 0;
-}
-
-.card__info>*+* {
-    margin-top: 0.5rem;
-} */
-
-/* TOURISM LOGO CASE STUDY */
-.tl-melbourne-info {
+.container-wide {
     margin: auto;
-    width: 50%;
+    max-width: 70%;
     padding: 10px;
-
 }
 
-
-
-footer {
-    background-color: #aca9c4;
-    /* border-top: .5px solid #888; */
-}
-
-footer a {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    color: rgb(24, 24, 24);
-}
-
-
-.social-nav ul {
-    margin: 0;
-    padding: 0;
-    list-styles: none;
-    display: flex;
-}
-
+/* GLOBAL GRID SYSTEM */
 .row {
-    --gridgap: 2em;
+    --gridgap: 3em;
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -236,4 +229,161 @@ footer a {
     .two-thirds.centered {
         grid-column-start: 3;
     }
+}
+
+
+/* HOME PAGE STYLING */
+
+/* PORTFOLIO GRID */
+.portfolio-section {
+    --space: calc(2vw + 2vh);
+    padding: var(--space);
+    /* height: 100%; */
+    /* height problem with footer note */
+}
+
+
+
+.portfolio-grid {
+    display: grid;
+    align-content: center;
+    /* grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-gap: var(--space);
+    /* background-color: yellow; */
+    height: 90%;
+}
+
+@media (max-width:767px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pg-perspective {
+    perspective: 750px;
+    position: relative;
+    text-align: center;
+}
+
+.portfolio-grid .pg-card {
+    /* width: 23vw;
+    height: 23vw; */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 12px; */
+
+}
+
+.portfolio-grid img {
+    /* max-width: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* width: 23vw;
+    height: 100%; */
+    display: block;
+
+    /* border-radius: 12px; */
+    margin: 0 auto;
+
+}
+
+.pg-card-info {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    /* padding: 10em; */
+    background-color: #148C77;
+    padding: 1em 0;
+    width: 100%;
+    /* border-radius: 12px 12px 0 0; */
+}
+
+.pg-card-info h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.pg-card-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pg-perspective a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .card {
+    background: #fff;
+} */
+
+/* .card__info {
+    padding: 1.5rem;
+}
+
+.card__info>* {
+    margin: 0;
+}
+
+.card__info>*+* {
+    margin-top: 0.5rem;
+} */
+
+/* ABOUT PAGE */
+/* .about-hero-img {
+    background-image: url("/img/hero-test.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.about-hero-info {}
+
+.about-hero-info p {
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+
+/* TOURISM LOGO CASE STUDY */
+
+.tl-line {
+    display: flex;
+    align-items: center;
+}
+
+.tl-line h1 {
+    margin-right: 1em;
+}
+
+.tl-line::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: #333;
+}
+
+
+
+.tl-mini-info {
+    list-style-type: none;
+}
+
+.tl-mini-info ul {
+    list-style: none;
+    padding-top: 5em;
 }
