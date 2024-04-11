@@ -1,3 +1,27 @@
+/* CSS TABLE OF CONTENTS
+
+# VARIABLES
+# GLOBALS
+    # GLOBAL TYPOGRAPHY
+    # GLOBAL BUTTONS
+    # GLOBAL MEDIA
+        # RESPONSIVE IMAGES
+    # GLOBAL STRUCTURE
+        # HERO
+    # GLOBAL LAYOUT
+        # CONTAINER
+        # GRID
+    # HOME PAGE STYLING
+        # PORTFOLIO GRID
+    # SUB BAGE STYLING
+
+*/
+
+
+
+
+
+
 :root {
     --font-body: "montserrat", sans-serif;
     --font-headings: "roboto-condensed", sans-serif;
@@ -349,7 +373,7 @@ section {
 
 
 
-/* TOURISM LOGO CASE STUDY */
+/* SUB PAGE STYLING */
 
 .tl-line {
     display: flex;
