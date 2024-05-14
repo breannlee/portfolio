@@ -482,3 +482,111 @@ li {
 .whitebg {
     background-color: white;
 }
+
+
+/* ANIMATION */
+
+.fade-in {
+    opacity: 0;
+    animation-name: my-fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes my-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-and-slide-in-from-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation-name: my-fade-and-slide-in-from-left;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes my-fade-and-slide-in-from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-and-slide-up-from-bottom {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation-name: my-fade-and-slide-up-from-bottom;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes my-fade-and-slide-up-from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCROLL TRIGGERED ANIMATION */
+
+/* SHIMMY UP */
+.animate-me-on-scroll.shimmy-up>* {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.animate-me-on-scroll.shimmy-up[data-sectionstate="active"]>* {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .6s ease-out;
+}
+
+.animate-me-on-scroll.shimmy-up[data-sectionstate="active"]>*:nth-child(1) {
+    transition-delay: 0;
+}
+
+.animate-me-on-scroll.shimmy-up[data-sectionstate="active"]>*:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.animate-me-on-scroll.shimmy-up[data-sectionstate="active"]>*:nth-child(3) {
+    transition-delay: .4s;
+}
+
+/* BRING TOGETHER */
+.animate-me-on-scroll.bring-together>* {
+    opacity: 0;
+}
+
+.animate-me-on-scroll.bring-together>*:nth-child(1) {
+    transform: translateX(-100px);
+}
+
+.animate-me-on-scroll.bring-together>*:nth-child(2) {
+    transform: translateX(100px);
+}
+
+.animate-me-on-scroll.bring-together[data-sectionstate="active"]>* {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .6s ease-out;
+}
