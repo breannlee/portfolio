@@ -397,7 +397,7 @@ section {
 
 
 .about-hero {
-    padding: 10em 0 10em 10em;
+    padding: 14em 0 14em 14em;
     display: flex;
 }
 
@@ -421,6 +421,18 @@ section {
     object-fit: contain;
 }
 
+.about-info ul,
+li {
+    list-style: none;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.about-info a {
+    text-decoration: none;
+    color: rgba(0, 20, 30, 0.6);
+    ;
+}
 
 .tl-line {
     display: flex;
