@@ -397,11 +397,10 @@ section {
 
 
 .about-hero {
-    padding: 14em 0 14em 14em;
-    display: flex;
+    padding: 14em 5em 14em 5em;
 }
 
-.about-info {}
+
 
 
 
@@ -420,6 +419,14 @@ section {
     overflow: hidden;
     object-fit: contain;
 }
+
+.about-info {
+    padding: 3em;
+    padding-top: 15em;
+    height: 1150px;
+}
+
+.about-info img {}
 
 .about-info ul,
 li {
