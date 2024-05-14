@@ -1,4 +1,4 @@
-# portfolio-v2
-Draft 2 of portfolio website
+# portfolio
+Portfolio Website
 
 [View Demo](https://breannlee.github.io/portfolio-v2/)
