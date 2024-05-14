@@ -396,9 +396,9 @@ section {
 /* ABOUT PAGE */
 
 
-.about-hero {
+/* .about-hero {
     padding: 14em 5em 14em 5em;
-}
+} */
 
 
 
@@ -426,7 +426,6 @@ section {
     height: 1000px;
 }
 
-.about-info img {}
 
 .about-info ul,
 li {
